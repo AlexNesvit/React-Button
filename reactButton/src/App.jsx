@@ -7,12 +7,12 @@ function App() {
 
   return (
     <>
-      <h1>App Button</h1>
+      <h1>Counter</h1>
       <div className="card">
       <Counter count={count} setCount={setCount} />
       </div>
       <p className="read-the-docs">
-        Click on the +  and - buttons: Current count: {count}
+        Current count: {count}
       </p>
       
     </>
