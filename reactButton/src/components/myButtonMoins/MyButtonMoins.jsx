@@ -1,10 +1,11 @@
-function myButtonMoins () {
-    return (
+import React from 'react';
 
-    <button onClick={() => setCount((count) => count - 1)}>
-    count is {count}
-    </button>
-    )
+function MyButtonMoins({ count, setCount }) {
+    return (
+        <button onClick={() => setCount(count - 1)}>
+        - Decrement
+        </button>
+    );
 }
 
-export default myButtonMoins
+export default MyButtonMoins;

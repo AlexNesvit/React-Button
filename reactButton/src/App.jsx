@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import MyButton from './components/myButtonPlus/MyButtonPlus'
+import Counter from './components/counter/Counter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,11 +9,10 @@ function App() {
     <>
       <h1>App Button</h1>
       <div className="card">
-      < MyButton />
-
+      <Counter count={count} setCount={setCount} />
       </div>
       <p className="read-the-docs">
-        Click on the +  and - buttons to learn more
+        Click on the +  and - buttons: Current count: {count}
       </p>
       
     </>

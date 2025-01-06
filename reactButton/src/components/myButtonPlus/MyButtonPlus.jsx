@@ -1,7 +1,11 @@
-function MyButtonPlus() {
+import React from 'react';
+
+function MyButtonPlus({ count, setCount }) {
     return (
-        <button onClick = {() => SetCount((count) => count +1)}>Count is {count}</button>
-    )
+        <button onClick={() => setCount(count + 1)}>
+        + Increment
+        </button>
+    );
 }
 
-export default MyButtonPlus
+export default MyButtonPlus;
