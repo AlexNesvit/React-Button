@@ -7,8 +7,8 @@ const Counter = ({ count, setCount }) => {
     return (
         <>
             <div className="card">
-                <MyButtonPlus count={count} setCount={setCount} />
                 <MyButtonMoins count={count} setCount={setCount} />
+                <MyButtonPlus count={count} setCount={setCount} />
             </div>
             <div className="card">
                 <Reinitialiser count={count} setCount={setCount} />
