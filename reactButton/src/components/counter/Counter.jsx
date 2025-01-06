@@ -1,6 +1,6 @@
 import React from 'react'
-import MyButtonPlus from './myButtonPlus/MyButtonPlus'
-import MyButtonMoins from './myButtonMoins/MyButtonMoins'
+import MyButtonPlus from '../myButtonPlus/MyButtonPlus'
+import MyButtonMoins from '../myButtonMoins/MyButtonMoins'
 
 const Counter = ({ count, setCount }) => {
     return (
