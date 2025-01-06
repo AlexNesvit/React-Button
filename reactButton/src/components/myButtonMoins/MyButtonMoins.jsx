@@ -2,7 +2,11 @@ import React from 'react';
 
 function MyButtonMoins({ count, setCount }) {
     return (
-        <button onClick={() => setCount(count - 1)}>
+        <button 
+        onClick={() => {
+            if (count > 0) setCount(count - 1);
+        }}
+        >
         - Decrement
         </button>
     );
